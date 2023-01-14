@@ -20,6 +20,7 @@
         <AssociationConnector Association="penshopdbModel.FK_Order_Pen" ManuallyRouted="false" />
         <AssociationConnector Association="penshopdbModel.FK_Pen_TypePen" ManuallyRouted="false" />
         <AssociationConnector Association="penshopdbModel.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="penshopdbModel.FK_Customer_User" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
