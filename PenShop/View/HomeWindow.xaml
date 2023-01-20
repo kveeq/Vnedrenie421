@@ -33,10 +33,37 @@
             </Button>
 
             <StackPanel Grid.Row="1">
-                <Button Content="Главная" />
-                <Button Content="Ручки" />
-                <Button Content="Клиенты" />
+                <Button>
+                    <Grid>
+                        <TextBlock x:Name="HomeNavigateTxt" Text="Главная" />
+                        <materialDesign:PackIcon
+                            x:Name="HomeNavigateBtn"
+                            Kind="Home"
+                            Visibility="Collapsed" />
+                    </Grid>
+                </Button>
+                <Button x:Name="PensBtn" Click="PensBtn_Click">
+                    <Grid>
+                        <TextBlock x:Name="PensNavigateTxt" Text="Ручки" />
+                        <materialDesign:PackIcon
+                            x:Name="PensNavigateBtn"
+                            Kind="Pen"
+                            Visibility="Collapsed" />
+                    </Grid>
+                </Button>
+                <Button>
+
+                    <Grid>
+                        <TextBlock x:Name="ClientsNavigateTxt" Text="Клиенты" />
+                        <materialDesign:PackIcon
+                            x:Name="ClientsNavigateBtn"
+                            Kind="People"
+                            Visibility="Collapsed" />
+                    </Grid>
+                </Button>
             </StackPanel>
         </Grid>
+
+        <Frame x:Name="frma" Grid.Column="1" />
     </Grid>
 </Window>

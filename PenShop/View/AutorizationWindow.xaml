@@ -43,11 +43,11 @@
             </StackPanel>
             <StackPanel Margin="10,0">
                 <Label Content="Логин" />
-                <TextBox x:Name="LoginTB" Height="20" />
+                <TextBox x:Name="LoginTB" />
             </StackPanel>
             <StackPanel Margin="10,0">
                 <Label Content="Пароль" />
-                <PasswordBox x:Name="PassPB" Height="20" />
+                <PasswordBox x:Name="PassPB"/>
             </StackPanel>
         </StackPanel>
 
